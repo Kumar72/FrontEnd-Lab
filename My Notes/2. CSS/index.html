@@ -5,16 +5,71 @@
 		<meta charset="utf-8">
 		<style type="text/css">
 			p {
-				color:red;
+				color:#2EFEF7;
 			}
+			div {
+				background-color: red;
+			}
+			.greybox{
+				background-color: darkgrey;
+				width: 80%;
+				text-align: right;
+				float: left -30%;
+			}
+			.blackbox{
+				background-color: black;
+				text-align: center;
+				width: auto;
+			}
+			.clear  {
+				clear:both;
+			}
+			.infobox {
+				float: right;
+			}
+			.large {
+				font-size: 300%;
+			}
+			.underline {
+				text-decoration: underline;
+			}
+			.bold {
+				font-weight: bold;
+			}
+
+			#green {
+				color: green;
+				font-size: 150%;
+
+			}
+			#purple {
+				color:purple;
+				font-size: 75%;
+			}
+
 		</style>
 	</head>
 	<body>
-		<h1>Heading 1</h1>
-		<p style="color:blue; font-size:200%">Example of inline CSS. Not recommended.</p>
-		<p>Paragraph affected by the &ltstyle&gt tag added in the &lthead&gt tag.</p>
+		<div class="greybox">
+			<h1>Heading 1</h1>
+			<p style="color:blue; font-size:200%">Example of inline CSS. Not recommended.</p>
+			<p>Paragraph affected by the &ltstyle&gt tag added in the &lthead&gt tag.</p>
+		</div>
+
 		<hr>
-		<h2>Heading 2</h2>
+		<div class="blackbox">
+			<p id="green">You can have multipe class's on the same page however you can only have 1 unique id per tag.</p>
+			<p id="purple" class="large">When both id and class at work. Id
+				<span class="large underline">overrides</span>
+				 any common elements that it shares with a class.</p>
+		</div>
+		<h2 class="clear">Heading 2</h2>
+		<hr>
+		<div class="infobox">
+			<p>Use 'html-color-codes.info' to get any color. <br>
+			Use float to make div's move to left or right.</p>
+		</div>
+
 		<table>
 			<tr>
 				<th>Movie</th><th>Number of Movies</th><th>Rating</th>
@@ -37,8 +92,8 @@
 		</table>
 
 		<h3>Heading 3</h3>
-		<p>Visit our <a href="#">Home Page</a> or our <a href="#">CSS Tutorial</a>.</p>
-		<p>What you should already know:</p>
+		<p class="large">Visit our <a href="#">Home Page</a> or our <a href="#">CSS Tutorial</a>.</p>
+		<p class="large" id="">What you should already know:</p>
 		<ul>
 			<li>HTML</li>
 			<li>XHTML</li>
