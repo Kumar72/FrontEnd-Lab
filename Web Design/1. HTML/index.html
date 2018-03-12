@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<a name="top"></a>
+		<h1>Header Tag(h1-h6)</h1>
+		Horizontal Rule below (hr) <hr>
+		<p>Paragraph Tag(p) - contains a bit of padding. Can add a break using (br) <br/>
+		and it will break the line.<br>We can also make things <strong>bold</strong> using
+		(strong) or <b>(b)</b>.<br> We can make something <em>italics</em> using (em) or <i>(i)</i>.
+		<br>Next there is <u>underline</u> which you can use with (u).<br>Finally there is
+		<strike>strikethrough</strike> tag (strike).</p>
+
+		<ul>
+			<li>Use (ul) to make unordered list.</li>
+			<li>Inside the (ul) use (li) to add to the list.</li>
+		</ul>
+
+		<ol>
+			<li>Use (ol) to make ordered list.</li>
+			<li>Also uses (li) to add to the list.</li>
+		</ol>
+
+		<img src="https://static.blog.playstation.com/wp-content/uploads/2017/11/HorizonZeroDawn-3-755x425.jpg"
+		width="300" height="auto" alt="">
+		<img src="images/SAO_Wallpaper.jpg" width="300" alt="">
+		<p>To add an image use &ltimg&gt tag and inside the tag are attributes.
+		So to add the image, you can specify the local path or the url in the
+		(src=) attribute.</p>
+
+		<a href="http://www.google.com">GOOGLE</a><br>
+		<a href="http://chandanthakur.pro/">MY PORTFOLIO</a>
+		<p>To add a link use &lta&gt tag and insert under (href=) attribute the link address. At the
+		bottom of this page there is another link (local link) that refers to another (a) tag that we
+		created at the top of the page with a (name="top") attribute. So when you click the bottom (a) element
+		which has (href=#top) as its attribute, it takes us back to the top of the page.</p>
+
+		<p>you can divide up your page using &#60div&#62 tag. Inside the div you can put anything. </p>
+		<div class="">
+			<p>We will make a form now using (form) tag.<br>Inside the form we can
+			add an (input) tag which has a few types of attributes (type=, name=, value=).<br>
+			There are different input types - email, radio (used for raido buttons and when you
+			give all the input the same name, it won't allow you to select all the radio options.), checkbox
+			(allows you to select multiple things), submit (will make a button that will submit the form
+			and when you click the button, it adds a '?' at the end of the url)
+			<br><br>Next is the (textarea) tag. Gives you a large aread to enter data.<br>
+			To make a dropdown menu use (select) tag with (option) tags inside.<br>
+			</p>
+			<form>
+				<input type="text" name="" placeholder="Enter value here" />
+				<input type="email" name="" value="type - email here"><br>
+				<textarea name="textarea" rows="8" cols="80"></textarea>
+				<br>
+				<select class="" name="">
+					<option value="">Select an Option</option>
+					<option value="">A</option>
+					<option value="">B</option>
+					<option value="">C</option>
+				</select>
+				<br>
+				<input type="radio" name="color" value="">Red
+				<input type="radio" name="color" value="">Blue
+				<input type="radio" name="color" value="">Black
+				<br>
+				<input type="checkbox" name="baseball"> Baseball
+				<input type="checkbox" name="soccer"> Soccer
+				<input type="checkbox" name="basketball"> Basketball
+				<br><br>
+				<input type="submit" name="" value="Click ME">
+			</form>
+			<p>Something similar to this will be added to URL depending on how you submit the form: "...HTML/index.html?textarea=Hello+&color=&soccer=on"</p>
+		</div>
+		<div class="">
+			<br>
+			<p>Next we will cover the (table) tag. Inside the table there are table row(tr) tags. Inside
+			the tr tag there are table header tag (th) and table data tag (td). To make a table you can
+			specify the total number of columns by adding x number or th or td inside the tr tag. To
+			specify the number or rows, you just add y number of tr tags.</p>
+			<table>
+				<tr>
+					<th>First Name</th><th>Last Name</th><th>Dead or Alive</th>
+				</tr>
+				<tr>
+					<td>Jon</td><td>Snow</td><td>Alive</td>
+				</tr>
+				<tr>
+					<td>Daenerys</td><td>Targaryen</td><td>Alive</td>
+				</tr>
+				<tr>
+					<td>Tyrion</td><td>Lannister</td><td>Alive</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div class="">
+			<iframe src="http://chandanthakur.pro" width="" height=""></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/w7s7JyoBK48" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<p>To write &lt and &gt along with a tag google HTML Entities.</p>
+		<a href="#top">Back To Top</a>
+	</body>
+</html>
